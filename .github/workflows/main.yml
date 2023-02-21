@@ -7,6 +7,7 @@ on:
   
   workflow_dispatch:
 
+
 jobs:
   deploy-to-github-pages:
     # use ubuntu-latest image to run steps on
@@ -41,5 +42,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-        BRANCH: gh-pages
+        BRANCH: main
         FOLDER: release/wwwroot
