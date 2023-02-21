@@ -1,4 +1,4 @@
-name: 'Publish application'
+name: 'My Publish application'
 on: 
   push:
     branches: [ main ]
@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     
     env:
